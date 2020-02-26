@@ -31,7 +31,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch("https://engineering.princeton.edu/newsletter.json")
+    fetch("https://dev-engineering.princeton.edu/newsletter")
       .then(res => {
         console.log(res);
         return res.json();
