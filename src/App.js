@@ -10,6 +10,9 @@ class App extends Component {
   render() {
     return (
       <div>
+        <center>
+          <h1>This Week's Engineering Events</h1>
+        </center>
         <h2>Monday</h2>
         <Monday events={this.state.events} />
         <h2>Tuesday</h2>

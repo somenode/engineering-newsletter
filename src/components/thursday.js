@@ -39,9 +39,9 @@ const Thursday = ({ events }) => {
         return (
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">
+              <h5 class="card-title">
                 <a href={event.urlRef}>{event.title}</a>
-              </h3>
+              </h5>
               <p class="card-text">{event.monthDay}</p>
               <p class="card-text">{event.time}</p>
               {event.building ? (
