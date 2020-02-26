@@ -12,8 +12,9 @@ body {
   border: none;
 }
 
-h5 {
+h3 {
   font-weight: 700;
+  font-size: 13px;
 }
 
 a {

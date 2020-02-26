@@ -35,14 +35,14 @@ const Monday = ({ events }) => {
 
   return (
     <div>
-      <h4>{monday.monthDay}</h4>
+      <h2>{monday.monthDay}</h2>
       {monday.map((event, index) => {
         return (
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">
+              <h3 class="card-title">
                 <a href={event.urlRef}>{event.title}</a>
-              </h5>
+              </h3>
               <p class="card-text">{event.monthDay}</p>
               <p class="card-text">{event.time}</p>
               {event.building ? (
