@@ -32,7 +32,10 @@ class App extends Component {
 
   componentDidMount() {
     fetch("https://engineering.princeton.edu/newsletter.json")
-      .then(res => res.json())
+      .then(res => {
+        console.log(res);
+        return res.json();
+      })
       .then(events => {
         this.setState({ events: events });
       })
