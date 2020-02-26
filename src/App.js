@@ -4,6 +4,7 @@ import Tuesday from "./components/tuesday";
 import Wednesday from "./components/wednesday";
 import Thursday from "./components/thursday";
 import Friday from "./components/friday";
+import Saturday from "./components/saturday";
 
 class App extends Component {
   render() {
@@ -19,6 +20,8 @@ class App extends Component {
         <Thursday events={this.state.events} />
         <h2>Friday</h2>
         <Friday events={this.state.events} />
+        <h2>Saturday</h2>
+        <Saturday events={this.state.events} />
       </div>
     );
   }

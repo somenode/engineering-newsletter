@@ -2,15 +2,16 @@
   {
     "nid": "7642",
     "title": "Detection Thresholds for Nonparametric Tests Based on Geometric Graphs: The Curious Case of Dimension 8",
-    "day": "Mon",
-    "monthDay": "Monday, March 2",
+    "day": "Sat",
+    "monthDay": "Saturday, March 7",
     "time": "12:25 pm",
-    "building": "Sherrerd Hall",
-    "roomDetails": "101",
-    "otherLoc": "",
+    "building": "",
+    "roomDetails": "",
+    "otherLoc": "AppNexus",
     "speaker": "Bhaswar Bhattacharya, University of Pennsylvania",
     "department": "Operations Research and Financial Engineering",
     "center": "",
+    "series": "S. S. Wilks Memorial Seminar in Statistics",
     "urlRef": "https://engineering.princeton.edu//events/orfe/detection-thresholds-nonparametric-tests-based-geometric-graphs-curious-case-dimension-8"
   },
   {
@@ -25,6 +26,7 @@
     "speaker": "Daniel Jackson, Massachusetts Institute of Technology",
     "department": "Computer Science",
     "center": "",
+    "series": "CS Department Colloquium Series",
     "urlRef": "https://engineering.princeton.edu//events/cs/new-abstraction-software-design"
   },
   {
@@ -39,6 +41,7 @@
     "speaker": "Gabe Perez-Giz, Princeton University",
     "department": "",
     "center": "Princeton Institute for Computational Science and Engineering",
+    "series": "PICSciE Mini-courses & Workshops",
     "urlRef": "https://engineering.princeton.edu//events/picscie/command-line-power-tools"
   },
   {
@@ -53,6 +56,7 @@
     "speaker": "Michael Dickey, North Carolina State University ",
     "department": "",
     "center": "Princeton Institute for the Science and Technology of Materials",
+    "series": "PRISM/PCCM SEMINAR SERIES",
     "urlRef": "https://engineering.princeton.edu//events/prism/liquid-metals-beyond-terminator"
   },
   {
@@ -67,6 +71,7 @@
     "speaker": "Suljo Linic, University of Michigan",
     "department": "Chemical and Biological Engineering",
     "center": "",
+    "series": "",
     "urlRef": "https://engineering.princeton.edu//events/cbe/plasmonic-chemistry-and-catalysis-opportunities-selective-and-sustainable-chemical"
   },
   {
@@ -81,6 +86,7 @@
     "speaker": "Mengxia Liu, University of Cambridge, United Kingdom",
     "department": "Electrical Engineering",
     "center": "",
+    "series": "",
     "urlRef": "https://engineering.princeton.edu//events/ee/printable-quantum-dot-inks-next-generation-infrared-optoelectronics"
   },
   {
@@ -95,6 +101,7 @@
     "speaker": "Elad Hazan, Princeton University ",
     "department": "Operations Research and Financial Engineering",
     "center": "",
+    "series": "S. S. Wilks Memorial Seminar in Statistics",
     "urlRef": "https://engineering.princeton.edu//events/orfe/non-stochastic-control-problem"
   },
   {
@@ -109,6 +116,7 @@
     "speaker": "James Tieng &#039;04, Lumos Capital Group",
     "department": "",
     "center": "Keller Center for Innovation in Engineering Education",
+    "series": "",
     "urlRef": "https://engineering.princeton.edu//events/kc/investing-edtech-friday-lunch-learn"
   },
   {
@@ -123,6 +131,7 @@
     "speaker": "Aluisio de Souza Pinheiro, University of Campinas",
     "department": "Operations Research and Financial Engineering",
     "center": "",
+    "series": "S. S. Wilks Memorial Seminar in Statistics",
     "urlRef": "https://engineering.princeton.edu//events/orfe/nonparametric-methods-detecting-change-multitemporal-sarpolsar-satellite-data"
   },
   {
@@ -137,6 +146,7 @@
     "speaker": "Rediet Abebe, Harvard Society of Fellows",
     "department": "Computer Science",
     "center": "Center for Information Technology Policy",
+    "series": "CITP Lecture Series",
     "urlRef": "https://engineering.princeton.edu//events/cs/citp/designing-algorithms-social-good"
   },
   {
@@ -151,6 +161,7 @@
     "speaker": "Kiyoul Yang, Stanford University",
     "department": "Electrical Engineering",
     "center": "",
+    "series": "",
     "urlRef": "https://engineering.princeton.edu//events/ee/photonic-integrated-circuits-inverse-design-atomic-clock-spectroscopy-particle-accelerator"
   }
 ]

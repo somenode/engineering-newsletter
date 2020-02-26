@@ -1,8 +1,8 @@
 import React from "react";
 
-const Wednesday = ({ events }) => {
-  var Wednesday = events.reduce(function(filtered, event) {
-    if (event.day === "Wed") {
+const Saturday = ({ events }) => {
+  var Saturday = events.reduce(function(filtered, event) {
+    if (event.day === "Sat") {
       var newDay = {
         nid: event.nid,
         title: event.title,
@@ -23,11 +23,11 @@ const Wednesday = ({ events }) => {
     return filtered;
   }, []);
 
-  if (!Wednesday.length) {
+  if (!Saturday.length) {
     return (
       <div class="card">
         <div class="card-body">
-          <p class="card-text">No events for Wednesday.</p>
+          <p class="card-text">No events for Saturday.</p>
         </div>
       </div>
     );
@@ -35,7 +35,8 @@ const Wednesday = ({ events }) => {
 
   return (
     <div>
-      {Wednesday.map((event, index) => {
+      <h4>{Saturday.monthDay}</h4>
+      {Saturday.map((event, index) => {
         return (
           <div class="card">
             <div class="card-body">
@@ -87,4 +88,4 @@ const Wednesday = ({ events }) => {
   );
 };
 
-export default Wednesday;
+export default Saturday;

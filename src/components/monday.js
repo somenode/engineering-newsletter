@@ -15,13 +15,13 @@ const Monday = ({ events }) => {
         speaker: event.speaker,
         department: event.department,
         center: event.center,
+        series: event.series,
         urlRef: event.urlRef
       };
       filtered.push(newDay);
     }
     return filtered;
   }, []);
-  //   console.log(monday);
 
   if (!monday.length) {
     return (
@@ -35,22 +35,51 @@ const Monday = ({ events }) => {
 
   return (
     <div>
+      <h4>{monday.monthDay}</h4>
       {monday.map((event, index) => {
         return (
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">{event.title}</h5>
+              <h5 class="card-title">
+                <a href={event.urlRef}>{event.title}</a>
+              </h5>
               <p class="card-text">{event.monthDay}</p>
               <p class="card-text">{event.time}</p>
-              <p class="card-text">{event.building}</p>
-              <p class="card-text">{event.roomDetails}</p>
-              <p class="card-text">{event.otherLoc}</p>
-              <p class="card-text">{event.speaker}</p>
-              <p class="card-text">{event.department}</p>
-              <p class="card-text">{event.center}</p>
-              <p class="card-text">
-                <a href="{event.urlRef}">{event.urlRef}</a>
-              </p>
+              {event.building ? (
+                <p class="card-text">
+                  <strong>Location: </strong>
+                  {event.building}, {event.roomDetails}
+                </p>
+              ) : (
+                <p class="card-text">
+                  <strong>Location: </strong>
+                  {event.otherLoc}
+                </p>
+              )}
+              {event.speaker ? (
+                <p class="card-text">
+                  <strong>Speaker: </strong>
+                  {event.speaker}
+                </p>
+              ) : null}
+              {event.department ? (
+                <p class="card-text">
+                  <strong>Department: </strong>
+                  {event.department}
+                </p>
+              ) : null}
+              {event.center ? (
+                <p class="card-text">
+                  <strong>Center: </strong>
+                  {event.center}
+                </p>
+              ) : null}
+              {event.series ? (
+                <p class="card-text">
+                  <strong>Series: </strong>
+                  {event.series}
+                </p>
+              ) : null}
             </div>
           </div>
         );
