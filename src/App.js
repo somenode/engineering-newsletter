@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <center>
-          <h1>This Week's Engineering Events</h1>
+          <h1>Engineering Events</h1>
         </center>
         <h2>Monday</h2>
         <Monday events={this.state.events} />
