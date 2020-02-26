@@ -46,36 +46,36 @@ const Tuesday = ({ events }) => {
               <p class="card-text">{event.time}</p>
               {event.building ? (
                 <p class="card-text">
-                  <strong>Location: </strong>
+                  <span class="label">Location: </span>
                   {event.building}, {event.roomDetails}
                 </p>
               ) : (
                 <p class="card-text">
-                  <strong>Location: </strong>
+                  <span class="label">Location: </span>
                   {event.otherLoc}
                 </p>
               )}
               {event.speaker ? (
                 <p class="card-text">
-                  <strong>Speaker: </strong>
+                  <span class="label">Speaker: </span>
                   {event.speaker}
                 </p>
               ) : null}
               {event.department ? (
                 <p class="card-text">
-                  <strong>Department: </strong>
+                  <span class="label">Department: </span>
                   {event.department}
                 </p>
               ) : null}
               {event.center ? (
                 <p class="card-text">
-                  <strong>Center: </strong>
+                  <span class="label">Center: </span>
                   {event.center}
                 </p>
               ) : null}
               {event.series ? (
                 <p class="card-text">
-                  <strong>Series: </strong>
+                  <span class="label">Series: </span>
                   {event.series}
                 </p>
               ) : null}

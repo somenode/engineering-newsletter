@@ -20,6 +20,9 @@ a {
   color: #2664d0;
 }
 
+span.label {
+  font-weight: 900;
+}
 .card-title,
 .card-text {
   margin-bottom: 0 !important;
