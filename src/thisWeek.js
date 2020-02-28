@@ -13,17 +13,17 @@ class thisWeek extends React.Component {
         <left>
           <h2>This Week's Events</h2>
         </left>
-        <h2>Monday</h2>
+        <h3>Monday</h3>
         <Monday events={this.state.events} />
-        <h2>Tuesday</h2>
+        <h3>Tuesday</h3>
         <Tuesday events={this.state.events} />
-        <h2>Wednesday</h2>
+        <h3>Wednesday</h3>
         <Wednesday events={this.state.events} />
-        <h2>Thursday</h2>
+        <h3>Thursday</h3>
         <Thursday events={this.state.events} />
-        <h2>Friday</h2>
+        <h3>Friday</h3>
         <Friday events={this.state.events} />
-        <h2>Saturday</h2>
+        <h3>Saturday</h3>
         <Saturday events={this.state.events} />
       </div>
     );
