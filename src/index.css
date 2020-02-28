@@ -64,3 +64,9 @@ code {
     display: block;
   }
 }
+
+@media (max-width: 425px) {
+  body {
+    margin: 10px 20px;
+  }
+}
