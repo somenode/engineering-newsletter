@@ -11,6 +11,7 @@ body {
 navbar ul {
   list-style: none;
   font-size: 18px;
+  padding-inline-start: 0;
 }
 
 navbar li {
