@@ -42,7 +42,7 @@ const Thursday = ({ events }) => {
               <h5 class="card-title">
                 <a href={event.urlRef}>{event.title}</a>
               </h5>
-              <p class="card-text">{event.monthDay}</p>
+              {/* <p class="card-text">{event.monthDay}</p> */}
               <p class="card-text">{event.time}</p>
               {event.building ? (
                 <p class="card-text">
