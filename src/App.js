@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class App extends React.Component {
   render() {
@@ -11,13 +12,13 @@ class App extends React.Component {
           <navbar>
             <ul>
               <li>
-                <a href="/this-week">This Week's Events </a>
+                <NavLink to="/this-week">This Week</NavLink>
               </li>
               <li>
-                <a href="/next-week">Next Week's Events</a>
+                <NavLink to="/next-week">Next Week</NavLink>
               </li>
               <li>
-                <a href="/two-weeks">Events Two Weeks From Now </a>
+                <NavLink to="/two-weeks">Two Weeks from Now</NavLink>
               </li>
             </ul>
           </navbar>
