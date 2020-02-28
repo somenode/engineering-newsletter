@@ -8,6 +8,12 @@ body {
   font-size: 13px;
 }
 
+navbar ul {
+  list-style: none;
+  font-size: 20px;
+  width: 50%;
+}
+
 .card {
   border: none;
 }

@@ -1,10 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import thisWeek from "./thisWeek";
+import nextWeek from "./nextWeek";
+import twoWeeks from "./twoWeeks";
+import * as serviceWorker from "./serviceWorker";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const routing = (
+  <Router>
+    <navbar>
+      <ul>
+        <li>
+          <li>Engineering Events</li>
+          <NavLink to="/this-week">This Week</NavLink>
+        </li>
+        <li>
+          <NavLink to="/next-week">Next Week</NavLink>
+        </li>
+        <li>
+          <NavLink to="/two-weeks">Two Weeks from Now</NavLink>
+        </li>
+      </ul>
+      <Route path="/" component={App} />
+      <Route path="/this-week" component={thisWeek} />
+      <Route path="/next-week" component={nextWeek} />
+      <Route path="/two-weeks" component={twoWeeks} />
+    </navbar>
+  </Router>
+);
+
+ReactDOM.render(routing, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
