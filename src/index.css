@@ -10,12 +10,20 @@ body {
 
 navbar ul {
   list-style: none;
-  font-size: 20px;
-  width: 50%;
+  font-size: 18px;
+}
+
+navbar li {
+  display: inline;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
 }
 
 .card {
   border: none;
+}
+h1 {
+  padding-bottom: 20px;
 }
 
 h5 {
@@ -38,4 +46,13 @@ span.label {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (max-width: 950px) {
+  navbar li {
+    padding-bottom: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    display: block;
+  }
 }

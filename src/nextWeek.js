@@ -10,9 +10,9 @@ class nextWeek extends React.Component {
   render() {
     return (
       <div>
-        <center>
+        <left>
           <h2>Next Week's Events</h2>
-        </center>
+        </left>
         <h2>Monday</h2>
         <Monday events={this.state.events} />
         <h2>Tuesday</h2>

@@ -10,9 +10,9 @@ class twoWeeks extends Component {
   render() {
     return (
       <div>
-        <center>
+        <left>
           <h2>Events in Two Weeks</h2>
-        </center>
+        </left>
         <h2>Monday</h2>
         <Monday events={this.state.events} />
         <h2>Tuesday</h2>

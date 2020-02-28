@@ -15,24 +15,10 @@ import {
 
 const routing = (
   <Router>
-    <navbar>
-      <ul>
-        <li>
-          <li>Engineering Events</li>
-          <NavLink to="/this-week">This Week</NavLink>
-        </li>
-        <li>
-          <NavLink to="/next-week">Next Week</NavLink>
-        </li>
-        <li>
-          <NavLink to="/two-weeks">Two Weeks from Now</NavLink>
-        </li>
-      </ul>
-      <Route path="/" component={App} />
-      <Route path="/this-week" component={thisWeek} />
-      <Route path="/next-week" component={nextWeek} />
-      <Route path="/two-weeks" component={twoWeeks} />
-    </navbar>
+    <Route path="/" component={App} />
+    <Route path="/this-week" component={thisWeek} />
+    <Route path="/next-week" component={nextWeek} />
+    <Route path="/two-weeks" component={twoWeeks} />
   </Router>
 );
 

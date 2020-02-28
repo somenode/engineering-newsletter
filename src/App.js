@@ -1,17 +1,26 @@
 import React, { Component } from "react";
-import Monday from "./components/monday";
-import Tuesday from "./components/tuesday";
-import Wednesday from "./components/wednesday";
-import Thursday from "./components/thursday";
-import Friday from "./components/friday";
-import Saturday from "./components/saturday";
 
 class App extends React.Component {
   render() {
     return (
       <div>
         <center>
-          <h2>Engineering Newsletter</h2>
+          <h1>
+            <a href="/">Engineering Newsletter</a>
+          </h1>
+          <navbar>
+            <ul>
+              <li>
+                <a href="/this-week">This Week's Events </a>
+              </li>
+              <li>
+                <a href="/next-week">Next Week's Events</a>
+              </li>
+              <li>
+                <a href="/two-weeks">Events Two Weeks From Now </a>
+              </li>
+            </ul>
+          </navbar>
         </center>
         {/* <h2>Monday</h2>
         <Monday events={this.state.events} />
