@@ -56,6 +56,12 @@ code {
     monospace;
 }
 
+.sweet-loading {
+  padding: 150px 20px;
+  margin: 0 auto;
+  /* display: block; */
+}
+
 @media (max-width: 950px) {
   navbar li {
     padding-bottom: 10px;

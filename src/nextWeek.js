@@ -6,8 +6,25 @@ import Thursday from "./components/thursday";
 import Friday from "./components/friday";
 import Saturday from "./components/saturday";
 import moment from "moment";
+import GridLoader from "react-spinners/GridLoader";
 
 class nextWeek extends React.Component {
+  state = {
+    events: [],
+    loading: true
+  };
+
+  componentDidMount() {
+    fetch("https://engineering.princeton.edu/newsletter/")
+      .then(res => {
+        console.log(res);
+        return res.json();
+      })
+      .then(events => {
+        this.setState({ events: events, loading: false });
+      })
+      .catch(console.log);
+  }
   render() {
     const today = this.state.currentDate;
     //Monday
@@ -70,53 +87,53 @@ class nextWeek extends React.Component {
       .add(13, "days")
       .format("MMMM D");
 
-    return (
-      <div>
-        <left>
-          <h2>Next Week's Events</h2>
-        </left>
-        <h3>
-          {monDay}, {monDate}
-        </h3>
-        <Monday events={this.state.events} />
-        <h3>
-          {tuesDay}, {tuesDate}
-        </h3>
-        <Tuesday events={this.state.events} />
-        <h3>
-          {wedDay}, {wedDate}
-        </h3>
-        <Wednesday events={this.state.events} />
-        <h3>
-          {thursDay}, {thursDate}
-        </h3>
-        <Thursday events={this.state.events} />
-        <h3>
-          {friDay}, {friDate}
-        </h3>
-        <Friday events={this.state.events} />
-        <h3>
-          {satDay}, {satDate}
-        </h3>
-        <Saturday events={this.state.events} />
-      </div>
-    );
-  }
-
-  state = {
-    events: []
-  };
-
-  componentDidMount() {
-    fetch("https://engineering.princeton.edu/newsletter/")
-      .then(res => {
-        console.log(res);
-        return res.json();
-      })
-      .then(events => {
-        this.setState({ events: events });
-      })
-      .catch(console.log);
+    if (this.state.loading) {
+      return (
+        <center>
+          <div className="sweet-loading">
+            <GridLoader
+              // css={override}
+              size={"15px"}
+              //size={"150px"} this also works
+              color={"#EE4266"}
+              loading={this.state.loading}
+            />
+          </div>
+        </center>
+      );
+    } else {
+      return (
+        <div>
+          <left>
+            <h2>Next Week's Events</h2>
+          </left>
+          <h3>
+            {monDay}, {monDate}
+          </h3>
+          <Monday events={this.state.events} />
+          <h3>
+            {tuesDay}, {tuesDate}
+          </h3>
+          <Tuesday events={this.state.events} />
+          <h3>
+            {wedDay}, {wedDate}
+          </h3>
+          <Wednesday events={this.state.events} />
+          <h3>
+            {thursDay}, {thursDate}
+          </h3>
+          <Thursday events={this.state.events} />
+          <h3>
+            {friDay}, {friDate}
+          </h3>
+          <Friday events={this.state.events} />
+          <h3>
+            {satDay}, {satDate}
+          </h3>
+          <Saturday events={this.state.events} />
+        </div>
+      );
+    }
   }
 }
 export default nextWeek;
