@@ -20,6 +20,7 @@ class thisWeek extends React.Component {
       .startOf("week")
       .add(1, "days")
       .format("MMMM D");
+
     //Tuesday
     var tuesDay = moment(today)
       .startOf("week")
@@ -29,6 +30,7 @@ class thisWeek extends React.Component {
       .startOf("week")
       .add(2, "days")
       .format("MMMM D");
+
     //Wednesday
     var wedDay = moment(today)
       .startOf("week")
@@ -38,6 +40,7 @@ class thisWeek extends React.Component {
       .startOf("week")
       .add(3, "days")
       .format("MMMM D");
+
     //Thursday
     var thursDay = moment(today)
       .startOf("week")
@@ -47,6 +50,7 @@ class thisWeek extends React.Component {
       .startOf("week")
       .add(4, "days")
       .format("MMMM D");
+
     //Friday
     var friDay = moment(today)
       .startOf("week")
@@ -56,6 +60,7 @@ class thisWeek extends React.Component {
       .startOf("week")
       .add(5, "days")
       .format("MMMM D");
+
     //Saturday
     var satDay = moment(today)
       .startOf("week")

@@ -3,12 +3,20 @@ import React from "react";
 const Wednesday = ({ events }) => {
   var Wednesday = events.reduce(function(filtered, event) {
     if (event.day === "Wed") {
+      var time = event.time;
+      var mapObj = {
+        am: "a.m.",
+        pm: "p.m."
+      };
+      time = time.replace(/am|pm/gi, function(matched) {
+        return mapObj[matched];
+      });
       var newDay = {
         nid: event.nid,
         title: event.title,
         day: event.day,
         monthDay: event.monthDay,
-        time: event.time,
+        time: time,
         building: event.building,
         roomDetails: event.roomDetails,
         otherLoc: event.otherLoc,
