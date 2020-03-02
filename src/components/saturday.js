@@ -53,17 +53,20 @@ const Saturday = ({ events }) => {
               </h5>
               {/* <p class="card-text">{event.monthDay}</p> */}
               <p class="card-text">{event.time}</p>
-              {event.building ? (
-                <p class="card-text">
-                  <b>Location: </b>
-                  {event.building}, {event.roomDetails}
-                </p>
-              ) : (
+              {event.roomDetails ? (
                 <p class="card-text">
                   <span class="label">Location: </span>
-                  {event.otherLoc}
+                  {event.building}, {event.roomDetails}
                 </p>
-              )}
+              ) : event.building ? (
+                <p class="card-text">
+                  <span class="label">Location: </span>
+                  {event.building}
+                </p>
+              ) : <p class="card-text">
+                  <span class="label">Location: </span>
+                  {event.otherLoc}
+                </p> ? null : null}
               {event.speaker ? (
                 <p class="card-text">
                   <span class="label">Speaker: </span>
