@@ -47,13 +47,13 @@ const Tuesday = ({ events }) => {
       {Tuesday.map((event, index) => {
         return (
           <div class="card">
+            <h5 class="card-title">
+              <a href={event.urlRef}>{event.title}</a>
+            </h5>
             <div class="card-body">
               {event.cancelled ? (
                 <p class="card-text alert">Cancelled.</p>
               ) : null}
-              <h5 class="card-title">
-                <a href={event.urlRef}>{event.title}</a>
-              </h5>
               {/* <p class="card-text">{event.monthDay}</p> */}
               <p class="card-text">{event.time}</p>
               {event.roomDetails ? (

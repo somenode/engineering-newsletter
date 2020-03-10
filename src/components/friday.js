@@ -48,12 +48,12 @@ const Friday = ({ events }) => {
         return (
           <div class="card">
             <div class="card-body">
-              {event.cancelled ? (
-                <p class="card-text alert">Cancelled.</p>
-              ) : null}
               <h5 class="card-title">
                 <a href={event.urlRef}>{event.title}</a>
               </h5>
+              {event.cancelled ? (
+                <p class="card-text alert">Cancelled.</p>
+              ) : null}
               {/* <p class="card-text">{event.monthDay}</p> */}
               <p class="card-text">{event.time}</p>
               {event.roomDetails ? (
