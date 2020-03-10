@@ -15,7 +15,7 @@ class twoWeeks extends Component {
   };
 
   componentDidMount() {
-    fetch("https://engineering.princeton.edu/newsletter/two-weeks")
+    fetch("https://engineering.princeton.edu/newsletter")
       .then(res => {
         console.log(res);
         return res.json();

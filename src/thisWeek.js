@@ -15,7 +15,7 @@ class thisWeek extends React.Component {
   };
 
   componentDidMount() {
-    fetch("https://engineering.princeton.edu/newsletter/this-week")
+    fetch("https://engineering.princeton.edu/newsletter")
       .then(res => {
         console.log(res);
         return res.json();
