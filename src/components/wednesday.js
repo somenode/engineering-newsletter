@@ -1,8 +1,21 @@
 import React from "react";
+import moment from "moment";
+
+const today = moment.currentDate;
+var wedDay = moment(today)
+  .startOf("week")
+  .add(3, "days")
+  .format("dddd");
+var wedDate = moment(today)
+  .startOf("week")
+  .add(3, "days")
+  .format("MMMM D");
+
+var wed = wedDay + ", " + wedDate;
 
 const Wednesday = ({ events }) => {
   var Wednesday = events.reduce(function(filtered, event) {
-    if (event.day === "Wed") {
+    if (event.monthDay === wed) {
       var time = event.time;
       var mapObj = {
         am: "a.m.",
