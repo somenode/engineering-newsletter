@@ -53,7 +53,7 @@ const Saturday = ({ events }) => {
             </h5>
             <div class="card-body">
               {event.cancelled ? (
-                <p class="card-text alert">Cancelled.</p>
+                <p class="card-text alert">Cancelled</p>
               ) : null}
               {/* <p class="card-text">{event.monthDay}</p> */}
               <p class="card-text">{event.time}</p>

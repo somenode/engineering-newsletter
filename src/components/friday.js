@@ -52,7 +52,7 @@ const Friday = ({ events }) => {
                 <a href={event.urlRef}>{event.title}</a>
               </h5>
               {event.cancelled ? (
-                <p class="card-text alert">Cancelled.</p>
+                <p class="card-text alert">Cancelled</p>
               ) : null}
               {/* <p class="card-text">{event.monthDay}</p> */}
               <p class="card-text">{event.time}</p>
