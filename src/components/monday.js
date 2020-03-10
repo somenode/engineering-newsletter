@@ -51,7 +51,7 @@ const Monday = ({ events }) => {
           <div class="card">
             <div class="card-body">
               {event.cancelled ? (
-                <p class="card-text">This event has been cancelled.</p>
+                <p class="card-text alert">Cancelled.</p>
               ) : null}
               <h5 class="card-title">
                 <a href={event.urlRef}>{event.title}</a>

@@ -24,7 +24,8 @@ const Tuesday = ({ events }) => {
         department: event.department,
         center: event.center,
         series: event.series,
-        urlRef: event.urlRef
+        urlRef: event.urlRef,
+        cancelled: event.cancelled
       };
       filtered.push(newDay);
     }
@@ -47,6 +48,9 @@ const Tuesday = ({ events }) => {
         return (
           <div class="card">
             <div class="card-body">
+              {event.cancelled ? (
+                <p class="card-text alert">Cancelled.</p>
+              ) : null}
               <h5 class="card-title">
                 <a href={event.urlRef}>{event.title}</a>
               </h5>
