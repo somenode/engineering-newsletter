@@ -60,10 +60,10 @@ const Tuesday = ({ events }) => {
       {Tuesday.map((event, index) => {
         return (
           <div class="card">
-            <h5 class="card-title">
-              <a href={event.urlRef}>{event.title}</a>
-            </h5>
             <div class="card-body">
+              <h5 class="card-title">
+                <a href={event.urlRef}>{event.title}</a>
+              </h5>
               {event.cancelled ? (
                 <p class="card-text alert">Cancelled</p>
               ) : null}
