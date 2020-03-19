@@ -1,21 +1,8 @@
 import React from "react";
-import moment from "moment";
-
-const today = moment.currentDate;
-var friDay = moment(today)
-  .startOf("week")
-  .add(5, "days")
-  .format("dddd");
-var friDate = moment(today)
-  .startOf("week")
-  .add(5, "days")
-  .format("MMMM D");
-
-var fri = friDay + ", " + friDate;
 
 const Friday = ({ events }) => {
   var Friday = events.reduce(function(filtered, event) {
-    if (event.monthDay === fri) {
+    if (event.day === "Fri") {
       var time = event.time;
       var mapObj = {
         am: "a.m.",

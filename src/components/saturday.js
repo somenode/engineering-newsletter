@@ -1,21 +1,8 @@
 import React from "react";
-import moment from "moment";
-
-const today = moment.currentDate;
-var satDay = moment(today)
-  .startOf("week")
-  .add(6, "days")
-  .format("dddd");
-var satDate = moment(today)
-  .startOf("week")
-  .add(6, "days")
-  .format("MMMM D");
-
-var sat = satDay + ", " + satDate;
 
 const Saturday = ({ events }) => {
   var Saturday = events.reduce(function(filtered, event) {
-    if (event.monthDay === sat) {
+    if (event.day === "Sat") {
       var time = event.time;
       var mapObj = {
         am: "a.m.",
